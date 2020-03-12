@@ -3,7 +3,8 @@ import {
   StyleSheet,
   View
 } from 'react-native';
-import CircularSlider from './CircularSlider'
+import CircularSlider from './CircularSlider';
+import ClockSlider from './ClockSlider';
 
 class CircularSliderApp extends Component {
   constructor(props){
@@ -22,7 +23,7 @@ class CircularSliderApp extends Component {
               value={this.state.slider1} onValueChange={(value)=>this.setState({slider1:value})}/>
           </View>
           <View style={styles.slider2}>
-            <CircularSlider width={300} height={300} meterColor='#ffa' textColor='#000'
+            <ClockSlider width={300} height={300} meterColor='#ffa' textColor='#000'
               value={this.state.slider2} onValueChange={(value)=>this.setState({slider2:value})}/>
           </View>
         </View>
